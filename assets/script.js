@@ -1,4 +1,3 @@
-
 function setCircleP1() {
    document.getElementById('x-p2').checked = true
 }
@@ -15,6 +14,7 @@ function setXP2() {
    document.getElementById('circle-p1').checked = true
 }
 
+let quant = 0
 
 document.getElementById('button-play').addEventListener('click', function () {
    const p1Name = document.getElementById('player-one-name')
@@ -34,7 +34,11 @@ document.getElementById('button-play').addEventListener('click', function () {
    }
 })
 
+let turn = 0
+
 function startGame() {
+   quant++
+
    //Estilização
    const linkGameStyleAnt = document.querySelector('link[href="assets/style-game.css"]')
    if (linkGameStyleAnt) {
@@ -71,11 +75,18 @@ function startGame() {
    
    const fields = document.getElementsByClassName('field')
 
-   let turn = 0
-   h5NameP1.style.opacity = "1"
-   h5NameP2.style.opacity = "0.5"
-   h5Player1.style.fontWeight = "900"
-   h5Player2.style.fontWeight = "200"
+   if (turn == 0) {
+      h5NameP1.style.opacity = "1"
+      h5NameP2.style.opacity = "0.5"
+      h5Player1.style.fontWeight = "900"
+      h5Player2.style.fontWeight = "200"
+   } else {
+      h5NameP1.style.opacity = "0.5"
+      h5NameP2.style.opacity = "1"
+      h5Player1.style.fontWeight = "200"
+      h5Player2.style.fontWeight = "900"
+
+   }
 
    let winner = false
 
@@ -84,14 +95,14 @@ function startGame() {
       
       function selected () {
          if (winner == true) {
-         } else if (fields[f].innerText == iconP1 || fields[f].innerText == iconP2) {
+         } else if (fields[f].dataset.checked === "p1" || fields[f].dataset.checked === "p2") {
             alert('Casa já selecionada. Tente outra')
          } else if (turn == 1) {
             h5NameP1.style.opacity = "1"
             h5NameP2.style.opacity = "0.5"
             h5Player1.style.fontWeight = "900"
             h5Player2.style.fontWeight = "200"
-            fields[f].classList.add('p2')
+            fields[f].style.color = "green"
             fields[f].innerText = iconP2
             fields[f].dataset.checked = "p2"
             turn = 0
@@ -100,7 +111,7 @@ function startGame() {
             h5NameP2.style.opacity = "1"
             h5Player1.style.fontWeight = "200"
             h5Player2.style.fontWeight = "900"
-            fields[f].classList.add('p1')
+            fields[f].style.color = "red"
             fields[f].innerText = iconP1
             fields[f].dataset.checked = "p1"
             turn = 1
@@ -317,10 +328,21 @@ function startGame() {
             h5Player2.style.fontWeight = "500"
 
             winner = true
+         } else {
+            let end = 0
+            for (let i = 0; i < fields.length; i++) {
+               if (fields[i].dataset.checked == "p1" || fields[i].dataset.checked == "p2") {
+                  end++
+               }               
+            }
+            if (end == 9) {
+               for (let i = 0; i < fields.length; i++) {
+                  fields[i].style.opacity = "0.5"
+               }
+               winner = true
+            }
          }
          
-         
-
       }
    }
 }
@@ -330,11 +352,14 @@ function backToStart() {
 }
 
 function restart() {
+   if (quant % 2 == 1) {
+      turn == 1
+   }
    const fields = document.getElementsByClassName('field')
    for (let i = 0; i < fields.length; i++) {
       fields[i].innerText = ""
       fields[i].style.opacity = "1"
-      fields[i].dataset.checked = ""
+      fields[i].dataset.checked = null
       winner = false
    }
    startGame()
