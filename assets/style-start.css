@@ -53,10 +53,10 @@ p#instructions {
 }
 
 .little-circle {
-   width: 15px;
-   height: 15px;
-   border-radius: 50%;
-   margin-right: 25px;
+   font: normal bold 1.8em "Arial", sans-serif;
+   padding: 0;
+   margin: 0;
+   margin: 0 10px;
    margin-left: 5px;
 }
 
@@ -69,10 +69,6 @@ p#instructions {
    margin-left: 5px;
 }
 
-.circle-p1 {
-   border: 3px solid red;
-}
-
 .x-p1 {
    color: red;
 }
@@ -81,8 +77,12 @@ p#instructions {
    color: green;
 }
 
+.circle-p1 {
+   color: red;
+}
+
 .circle-p2 {
-   border: 3px solid green;
+   color: green;
 }
 
 .input-icon-p1, .input-icon-p2 {
