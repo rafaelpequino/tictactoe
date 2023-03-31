@@ -126,9 +126,9 @@ function startGame() {
             fields[2].style.opacity = "1"
             
             h5NameP1.style.opacity = "1"
-            h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5NameP2.style.opacity = "0.5"
+            h5Player1.style.fontWeight = "900"
+            h5Player2.style.fontWeight = "200"
             winner = true
          } else if (fields[3].dataset.checked == "p1" && fields[4].dataset.checked == "p1" && fields[5].dataset.checked == "p1"){
             for (let i = 0; i < fields.length; i++) {
@@ -139,9 +139,9 @@ function startGame() {
             fields[5].style.opacity = "1"
             
             h5NameP1.style.opacity = "1"
-            h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5NameP2.style.opacity = "0.5"
+            h5Player1.style.fontWeight = "900"
+            h5Player2.style.fontWeight = "200"
             winner = true
          } else if (fields[6].dataset.checked == "p1" && fields[7].dataset.checked == "p1" && fields[8].dataset.checked == "p1"){
             for (let i = 0; i < fields.length; i++) {
@@ -152,9 +152,9 @@ function startGame() {
             fields[8].style.opacity = "1"
             
             h5NameP1.style.opacity = "1"
-            h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5NameP2.style.opacity = "0.5"
+            h5Player1.style.fontWeight = "900"
+            h5Player2.style.fontWeight = "200"
             winner = true
          } else if (fields[0].dataset.checked == "p1" && fields[4].dataset.checked == "p1" && fields[8].dataset.checked == "p1"){
             for (let i = 0; i < fields.length; i++) {
@@ -165,9 +165,9 @@ function startGame() {
             fields[8].style.opacity = "1"
             
             h5NameP1.style.opacity = "1"
-            h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5NameP2.style.opacity = "0.5"
+            h5Player1.style.fontWeight = "900"
+            h5Player2.style.fontWeight = "200"
             winner = true
          } else if (fields[2].dataset.checked == "p1" && fields[4].dataset.checked == "p1" && fields[6].dataset.checked == "p1"){
             for (let i = 0; i < fields.length; i++) {
@@ -178,9 +178,9 @@ function startGame() {
             fields[6].style.opacity = "1"
             
             h5NameP1.style.opacity = "1"
-            h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5NameP2.style.opacity = "0.5"
+            h5Player1.style.fontWeight = "900"
+            h5Player2.style.fontWeight = "200"
             winner = true
          } else if (fields[0].dataset.checked == "p1" && fields[3].dataset.checked == "p1" && fields[6].dataset.checked == "p1"){
             for (let i = 0; i < fields.length; i++) {
@@ -191,9 +191,9 @@ function startGame() {
             fields[6].style.opacity = "1"
             
             h5NameP1.style.opacity = "1"
-            h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5NameP2.style.opacity = "0.5"
+            h5Player1.style.fontWeight = "900"
+            h5Player2.style.fontWeight = "200"
             winner = true
          } else if (fields[1].dataset.checked == "p1" && fields[4].dataset.checked == "p1" && fields[7].dataset.checked == "p1"){
             for (let i = 0; i < fields.length; i++) {
@@ -204,9 +204,9 @@ function startGame() {
             fields[7].style.opacity = "1"
             
             h5NameP1.style.opacity = "1"
-            h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5NameP2.style.opacity = "0.5"
+            h5Player1.style.fontWeight = "900"
+            h5Player2.style.fontWeight = "200"
             winner = true
          } else if (fields[2].dataset.checked == "p1" && fields[5].dataset.checked == "p1" && fields[8].dataset.checked == "p1"){
             for (let i = 0; i < fields.length; i++) {
@@ -217,9 +217,9 @@ function startGame() {
             fields[8].style.opacity = "1"
             
             h5NameP1.style.opacity = "1"
-            h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5NameP2.style.opacity = "0.5"
+            h5Player1.style.fontWeight = "900"
+            h5Player2.style.fontWeight = "200"
             winner = true
          }
 
@@ -231,10 +231,10 @@ function startGame() {
             fields[1].style.opacity = "1"
             fields[2].style.opacity = "1"
             
-            h5NameP1.style.opacity = "1"
+            h5NameP1.style.opacity = "0.5"
             h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5Player1.style.fontWeight = "200"
+            h5Player2.style.fontWeight = "900"
             winner = true
          } else if (fields[3].dataset.checked == "p2" && fields[4].dataset.checked == "p2" && fields[5].dataset.checked == "p2"){
             for (let i = 0; i < fields.length; i++) {
@@ -244,10 +244,10 @@ function startGame() {
             fields[4].style.opacity = "1"
             fields[5].style.opacity = "1"
             
-            h5NameP1.style.opacity = "1"
+            h5NameP1.style.opacity = "0.5"
             h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5Player1.style.fontWeight = "200"
+            h5Player2.style.fontWeight = "900"
             winner = true
          } else if (fields[6].dataset.checked == "p2" && fields[7].dataset.checked == "p2" && fields[8].dataset.checked == "p2"){
             for (let i = 0; i < fields.length; i++) {
@@ -257,10 +257,10 @@ function startGame() {
             fields[7].style.opacity = "1"
             fields[8].style.opacity = "1"
             
-            h5NameP1.style.opacity = "1"
+            h5NameP1.style.opacity = "0.5"
             h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5Player1.style.fontWeight = "200"
+            h5Player2.style.fontWeight = "900"
             winner = true
          } else if (fields[0].dataset.checked == "p2" && fields[4].dataset.checked == "p2" && fields[8].dataset.checked == "p2"){
             for (let i = 0; i < fields.length; i++) {
@@ -270,10 +270,10 @@ function startGame() {
             fields[4].style.opacity = "1"
             fields[8].style.opacity = "1"
             
-            h5NameP1.style.opacity = "1"
+            h5NameP1.style.opacity = "0.5"
             h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5Player1.style.fontWeight = "200"
+            h5Player2.style.fontWeight = "900"
             winner = true
          } else if (fields[2].dataset.checked == "p2" && fields[4].dataset.checked == "p2" && fields[6].dataset.checked == "p2"){
             for (let i = 0; i < fields.length; i++) {
@@ -283,10 +283,10 @@ function startGame() {
             fields[4].style.opacity = "1"
             fields[6].style.opacity = "1"
             
-            h5NameP1.style.opacity = "1"
+            h5NameP1.style.opacity = "0.5"
             h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5Player1.style.fontWeight = "200"
+            h5Player2.style.fontWeight = "900"
             winner = true
          } else if (fields[0].dataset.checked == "p2" && fields[3].dataset.checked == "p2" && fields[6].dataset.checked == "p2"){
             for (let i = 0; i < fields.length; i++) {
@@ -296,10 +296,10 @@ function startGame() {
             fields[3].style.opacity = "1"
             fields[6].style.opacity = "1"
             
-            h5NameP1.style.opacity = "1"
+            h5NameP1.style.opacity = "0.5"
             h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5Player1.style.fontWeight = "200"
+            h5Player2.style.fontWeight = "900"
             winner = true
          } else if (fields[1].dataset.checked == "p2" && fields[4].dataset.checked == "p2" && fields[7].dataset.checked == "p2"){
             for (let i = 0; i < fields.length; i++) {
@@ -309,10 +309,10 @@ function startGame() {
             fields[4].style.opacity = "1"
             fields[7].style.opacity = "1"
             
-            h5NameP1.style.opacity = "1"
+            h5NameP1.style.opacity = "0.5"
             h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5Player1.style.fontWeight = "200"
+            h5Player2.style.fontWeight = "900"
             winner = true
          } else if (fields[2].dataset.checked == "p2" && fields[5].dataset.checked == "p2" && fields[8].dataset.checked == "p2"){
             for (let i = 0; i < fields.length; i++) {
@@ -322,10 +322,10 @@ function startGame() {
             fields[5].style.opacity = "1"
             fields[8].style.opacity = "1"
             
-            h5NameP1.style.opacity = "1"
+            h5NameP1.style.opacity = "0.5"
             h5NameP2.style.opacity = "1"
-            h5Player1.style.fontWeight = "500"
-            h5Player2.style.fontWeight = "500"
+            h5Player1.style.fontWeight = "200"
+            h5Player2.style.fontWeight = "900"
 
             winner = true
          } else {
@@ -340,6 +340,10 @@ function startGame() {
                   fields[i].style.opacity = "0.5"
                }
                winner = true
+               h5NameP1.style.opacity = "1"
+               h5NameP2.style.opacity = "1"
+               h5Player1.style.fontWeight = "500"
+               h5Player2.style.fontWeight = "500"
             }
          }
          
