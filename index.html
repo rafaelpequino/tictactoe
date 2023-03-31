@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tic Tac Toe</title>
+   <link rel="stylesheet" href="assets/style-start.css">
+   <script src="assets/script.js" defer></script>
+ </head>
+ <body>
+   <div id="container-start">
+      <section id="in-players">
+         <header>
+            <h1 id="title-welcome">Bem-vindos ao Tic Tac Toe</h1>
+            <p id="instructions">Insira os nomes e símbolos dos jogadores</p>
+         </header>
+         <main>
+            <div id="player-one-in">
+               <input type="text" name="player-one-name" id="player-one-name" class="input-player" placeholder="Jogador 1" maxlength="10">
+
+               <div class="icon-decide">
+                  <div class="input-icon-p1">
+                     <input type="radio" name="icon-p1" id="circle-p1"  class="input-icon" data-iconP1="circle" onchange="setCircleP1()">
+                     <label for="icon-p1">
+                        <div class="little-circle circle-p1"></div>
+                     </label>
+                  </div>
+                  <div class="input-icon-p1">
+                     <input type="radio" name="icon-p1" id="x-p1" class="input-icon" data-iconP1="x" onchange="setXP1()">
+                     <label for="icon-p1">
+                        <div class="little-x x-p1">X</div>
+                     </label>
+                  </div>
+               </div>
+
+            </div>
+            <div id="player-two-in" >
+               <input type="text" name="player-two-name" id="player-two-name" class="input-player" placeholder="Jogador 2"  maxlength="10">
+
+               <div class="icon-decide">
+                  <div class="input-icon-p2">
+                     <input type="radio" name="icon-p2" id="circle-p2" class="input-icon" data-iconP2="circle" onchange="setCircleP2()">
+                     <label for="icon-p1">
+                        <div class="little-circle circle-p2"></div>
+                     </label>
+                  </div>
+                  <div class="input-icon-p2">
+                     <input type="radio" name="icon-p2" id="x-p2" class="input-icon" data-iconP2="x" onchange="setXP2()">
+                     <label for="icon-p1">
+                        <div class="little-x x-p2">X</div>
+                     </label>
+                  </div>
+               </div>
+
+            </div>
+
+            <button id="button-play">Jogar</button>
+
+         </main>
+      </section>
+   </div>
+
+   <div id="container-game">
+      <section id="game">
+         <header>
+            <div id="player1" class="player">
+               <h5 id="h5player1">Jogador 1</h5>
+               <h4 id="nameP1"></h4>
+            </div>
+            <div id="refresh">
+               <img width="20px" src="img/back.png" alt="Voltar" onclick="backToStart()">
+               <img width="20px" src="img/refresh.png" alt="Recomeçar" onclick="restart()">
+            </div>
+            <div id="player2" class="player">
+               <h5 id="h5player2">Jogador 2</h5>
+               <h4 id="nameP2"></h4>
+            </div>
+         </header>
+         <table>
+            <tr>
+               <td><div class="field top-left"></div></td>
+               <td><div class="field top-center"></div></td>
+               <td><div class="field top-right"></div></td>
+            </tr>
+            <tr>
+               <td><div class="field center-left"></div></td>
+               <td><div class="field center-center"></div></td>
+               <td><div class="field center-right"></div></td>
+            </tr>
+            <tr>
+               <td><div class="field bottom-left"></div></td>
+               <td><div class="field bottom-center"></div></td>
+               <td><div class="field bottom-right"></div></td>
+            </tr>
+         </table>
+      </section>
+   </div>
+   
+ </body>
+ </html>
